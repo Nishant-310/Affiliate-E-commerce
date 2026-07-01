@@ -8,7 +8,7 @@ import { navLinks, trustBadges, categories, products } from './data/siteData'
 import './App.css'
 
 const HERO_IMAGE =
-  'Hero.jpeg'
+  '/Hero.jpeg'
 
 function App() {
   return (
