@@ -1,0 +1,25 @@
+.category-section {
+  padding: 64px 0 40px;
+}
+
+.category-section__title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 36px;
+}
+
+.category-section__title span {
+  color: var(--primary);
+}
+
+.category-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .category-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

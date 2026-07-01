@@ -1,0 +1,41 @@
+.trust {
+  background-color: var(--bg-card);
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.trust__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.trust__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trust__icon {
+  font-size: 22px;
+}
+
+.trust__title {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.trust__subtitle {
+  font-size: 12px;
+  color: var(--text-light);
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .trust__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

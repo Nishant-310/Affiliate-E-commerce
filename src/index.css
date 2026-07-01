@@ -1,0 +1,70 @@
+:root {
+  /* ---- Color palette (from design spec) ---- */
+  --bg-main: #0d1117;      /* Dark Background - Main */
+  --bg-card: #1a1f2b;      /* Card / Section Background */
+  --primary: #7c3aed;      /* Primary - Purple */
+  --accent: #f43f5e;       /* Accent - Red/Pink */
+  --text-light: #e5e7eb;   /* Text - Light Gray */
+  --text-white: #ffffff;   /* Text - White */
+  --secondary: #22d3ee;    /* Secondary - Cyan/Blue */
+  --highlight: #fbbf24;    /* Highlight - Yellow */
+
+  /* ---- Typography ---- */
+  --font-heading: 'Bebas Neue', 'Oswald', sans-serif;
+  --font-body: 'Inter', 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--bg-main);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+  color: var(--text-white);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}

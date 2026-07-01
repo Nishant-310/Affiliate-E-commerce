@@ -1,0 +1,79 @@
+.header {
+  background-color: var(--bg-main);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header__logo {
+  font-family: var(--font-heading);
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: var(--text-white);
+}
+
+.header__logo span {
+  color: var(--primary);
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+.header__nav a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-light);
+  padding-bottom: 6px;
+  transition: color 0.2s ease;
+}
+
+.header__nav a:hover,
+.header__nav a.active {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header__icons button {
+  background: transparent;
+  color: var(--text-light);
+  font-size: 16px;
+  position: relative;
+}
+
+.header__cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: var(--accent);
+  color: var(--text-white);
+  font-size: 10px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .header__nav {
+    display: none;
+  }
+}
